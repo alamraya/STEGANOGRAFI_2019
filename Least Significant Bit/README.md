@@ -24,15 +24,15 @@ Steganografi-Alpha adalah aplikasi iterasi pertama
 Steganografi-Beta adalah aplikasi iterasi kedua
 ```
 
-### Steganalys
+### *Steganalys
 * run index.html in browser
 
-### Alpha
+### *Alpha
 * place the folder on Htdocs or www
 * start the server and call location folder
 * the word that accepted is only multiple 3
 
-### Beta
+### *Beta
 * place the folder on Htdocs or www
 * start the server and call location folder
 * its not containing the extract method (extract not work)
