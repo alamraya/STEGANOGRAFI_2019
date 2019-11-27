@@ -5,11 +5,11 @@
 Steganography coder/decoder and analyzer with LSB 
 
 Kelompok sesi3:
-177006020 Dewi Wulan Sari		
-177006098 Dias Ramadhani 		
-177006006 Fadilah Salsabila		
-177006058 Mitha Maharani Wahyudi	
-177006012 Sheila Maulida Intani		
+<p>177006020 Dewi Wulan Sari</p>
+<p>177006098 Dias Ramadhani</p>		
+<p>177006006 Fadilah Salsabila</p>	
+<p>177006058 Mitha Maharani Wahyudi</p>
+<p>177006012 Sheila Maulida Intani</p>	
 
 
 ## System Requirements
