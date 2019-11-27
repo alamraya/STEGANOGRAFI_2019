@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v3.7.2">
+
+      <title>KEAMANAN INFORMASI</title>
+
+      <!-- Bootstrap core CSS -->
+
+      <link href="dist/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">STEGANOGRAFI DCT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Encode </a>
+          <a class="nav-item nav-link active" href="index2.html">Decode</a>
+          <a class="nav-item nav-link " href="index3.html">Pengujian</a>
+        </div>
+      </div>
+    </nav>
+<!--navbarend-->
+
+    <br>
+     <div class="container">
+       <div  class="card mx-auto " style="max-width: 57rem;">
+          <div class="card-header">
+              DAPATKAN PESAN DARI GAMBAR
+            </div>
+       <div class="card-body">
+          <div class="form-group">
+            <label for="gambar">Masukan Gambar</label>
+            <input type="file" id="file1" accept="image/*" class="form-control-file" id="">
+          </div>
+          <div class="form-group">
+              <label for="sandi">Masukan Kata Sandi</label>
+              <input type="text" id="pass1" value="" class="form-control" id="sandi" placeholder="Password">
+            </div>
+
+            <button class="btn btn-primary" onclick='readIMG()'>Ekstrak Gambar</button><br><br>
+            
+            <div id="result" class="alert alert-primary">
+
+            </div>
+            </div>
+      
+    </div>
+    </div>
+     </div>
+
+    </body>
+    <script src="jquery.min.js"></script>
+    <script src="cryptostego.min.js"></script>
+    <script>
+    function readIMG(){
+        function readfunc(){
+            var t=readMsgFromCanvas('canvas',$("#pass1").val(),3);
+            if(t!=null){
+                t=t.split('&').join('&amp;');
+                t=t.split(' ').join('&nbsp;'); 
+                t=t.split('<').join('&lt;');
+                t=t.split('>').join('&gt;');
+                t=t.replace(/(?:\r\n|\r|\n)/g, '<br />');
+                $("#result").html(t);
+            }else $("#result").html('Galat saat mengekstrak pesan!');
+                 
+        }
+        loadIMGtoCanvas('file1','canvas',readfunc);
+    }
+    </script>
+    </html>
+    

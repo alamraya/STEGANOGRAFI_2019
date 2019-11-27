@@ -1,0 +1,1 @@
+Aplikasi Steganografi Menggunakan Metode Discrete Cosines Transform
