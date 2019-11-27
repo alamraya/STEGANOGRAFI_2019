@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v3.7.2">
+
+      <title>KEAMANAN INFORMASI</title>
+
+      <!-- Bootstrap core CSS -->
+
+      <link href="dist/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">STEGANOGRAFI DCT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Encode </a>
+          <a class="nav-item nav-link" href="index2.html">Decode</a>
+          <a class="nav-item nav-link active" href="index3.html">Pengujian</a>
+        </div>
+      </div>
+    </nav>
+<!--navbarend-->
+
+    <br>
+     <div class="container">
+  
+       <div  class="card mx-auto " style="max-width: 57rem;">
+          <div class="card-header">
+              PENGETESAN PSNR
+            </div>
+       <div class="card-body">
+          <div class="form-group">
+            <label for="gambar">Masukan Gambar Original</label>
+            <input type="file" id="objFile" accept="image/*" class="form-control-file" id="" onchange="uploadFile()">
+          </div>
+
+          <div class="form-group">
+            <label for="gambar">Masukan Gambar Steganografi</label>
+            <input type="file" id="file1" accept="image/*" class="form-control-file" id="" onchange="stegoFile()">
+          </div>
+         
+
+            <button class="btn btn-primary" onclick='getPSNR()'>Submit</button><br><br>
+            
+            <pre id="result" class="alert alert-primary"></pre>
+
+            </div>
+      
+    </div>
+    </div>
+     </div>
+
+    </body>
+    <script src="jquery.min.js"></script>
+    <script src="cryptostego.min.js"></script>
+    <script src="bigInteger.js"></script>
+
+    <script>
+    var byteCover = null;
+    var byteStego = null;
+    var coverWidth = null;
+    var coverHeight = null;
+    var coverHeight = null;
+    var stegoWidth = null;
+    var stegoHeight = null;
+    var stegoSize = null;
+
+        function uploadFile() {
+        var input = document.getElementById('objFile');
+        // var file = $("#objFile")[0].files[0];
+        var file = input.files[0];
+        fr = new FileReader();
+        // fr.onload = receivedText;
+        //fr.readAsText(file);
+        fr.onload = (function(theFile){
+            return function(e){
+                byteCover = receivedText();
+                console.log(byteCover);
+                var img = new Image;
+                img.src = fr.result;
+                img.onload = function(){
+                    coverSize = file.size;
+                    coverWidth = img.width;
+                    coverHeight = img.height;
+                    console.log('Cover Image : '+coverWidth + 'x' + coverHeight);
+                };
+            };
+        }) (file);
+        fr.readAsDataURL(file);
+    }
+
+    function stegoFile() {
+        var input = document.getElementById('file1');
+        // var file = $("#objFile")[0].files[0];
+        var file = input.files[0];
+        fr = new FileReader();
+        // fr.onload = receivedText;
+        //fr.readAsText(file);
+        fr.onload = (function(theFile){
+            return function(e){
+                byteStego = receivedText();
+                console.log(byteStego);
+                var img = new Image;
+                img.src = fr.result;
+                img.onload = function(){
+                    stegoSize = file.size;
+                    stegoWidth = img.width;
+                    stegoHeight = img.height;
+                    console.log('Cover Image : '+stegoWidth + 'x' +stegoHeight);
+                };
+            };
+        }) (file);
+        fr.readAsDataURL(file);
+    }
+
+    function log10(value){
+        return Math.log(value) / Math.LN10;
+    }
+    var sumByte=0;
+    function getPSNR(){
+        var coverLength = byteCover.length;
+
+        // if ((coverHeight*coverWidth) == (stegoHeight*stegoWidth)){
+            var i = 0;
+
+            while (i <= coverLength){
+                sumByte = bigInt(sumByte+Math.pow((bigInt(byteCover[i])-bigInt(byteStego[i])),2));
+                i+=1;
+            }
+            var MSE = bigInt(sumByte)/(coverHeight*coverWidth);
+            var PSNR = 10*log10(255*255/MSE);
+
+            console.log(MSE);
+            console.log(PSNR);
+
+            document.getElementById('result').textContent=
+            'MSE:'+MSE+'\n'+
+            'PSNR:'+PSNR+'\n';
+        }
+    // }
+
+    function receivedText() {
+        var b64Data = fr.result.split(',');
+        var contentType = 'image/jpeg';
+        //document.getElementById('editor').appendChild(document.createTextNode(fr.result))
+        var byteCharacters = atob(b64Data[1]);
+        var byteNumbers = Array.prototype.map.call(byteCharacters,
+                                       charCodeFromCharacter);
+        var uint8Data = new Uint8Array(byteNumbers);
+        return b64toBlob(b64Data[1], contentType);
+        //var blobUrl = URL.createObjectURL(blob);
+    }
+
+    function charCodeFromCharacter(c) {
+         return c.charCodeAt(0);
+    }
+
+    function b64toBlob(b64Data, contentType, sliceSize) {
+        contentType = contentType || '';
+        sliceSize = sliceSize || 1024;
+       var byteCharacters = atob(b64Data);
+        var byteArrays = [];
+
+        for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+            var slice = byteCharacters.slice(offset, offset + sliceSize);
+            var byteNumbers = Array.prototype.map.call(slice, charCodeFromCharacter);
+            var byteArray = new Uint8Array(byteNumbers);
+            byteArrays.push(byteArray);
+        }
+        // console.log(byteArray);
+        return byteArray;
+
+    }
+    </script>
+    </html>
+    
