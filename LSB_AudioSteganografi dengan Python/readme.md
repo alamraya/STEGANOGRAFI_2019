@@ -15,7 +15,7 @@ Kelompok sesi3:
 
 Python Ver. 3
 
-## System Requirements
+## Cara Penggunaan
 
 1. Simpan Audio berformat .wav pada file yang sama dengan souce python 
 2. Pada Source Code tertulis 
