@@ -1,0 +1,15 @@
+KELOMPOK 
+1. EGI TAUFIK HIDAYAH       177006079
+2. RAHMI SEPTI YUDIANTI     177006015
+3. EVI NURHAYATI            177006005
+4. RIFKI RIJKULLOH          177006042
+5. ABDI MALIKI              177006100
+
+STEGANO - END OF FILE 
+Merupakan sebuah penyisipan pesan di akhir file. Prinsip kerja EOF adalah menyisipkan karakter EOF pada akhir file 
+sebelum menambahkan pesan tersembunyi di belakang file tersebut .
+
+IMPLEMENTASI
+Metode EOF yang diimplentasikan pada aplikasi ini merupakan metode EOF dengan menggunakan tanda khusus yang diletakkan pada akhir media file citra digital (FILE ASLI) sebagai pengenal awal (DATA HEADER) dan pengenal akhir (FLAG) dari data yang disisipkan.
+ 
+
