@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F5 Steganography</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="">
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col">
+            </div>
+            <div class="col-8 text-dark">
+                <div class="card bg-light border-dark">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="embed-tab" data-toggle="tab" href="#embed" role="tab" aria-controls="embed" aria-selected="true">Embed</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="extract-tab" data-toggle="tab" href="#extract" role="tab" aria-controls="extract" aria-selected="false">Extract</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="psnr-tab" data-toggle="tab" href="#psnr" role="tab" aria-controls="psnr" aria-selected="false">Calculate PSNR</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="embed" role="tabpanel" aria-labelledby="embed-tab">
+                                <div class="form-inline mt-3">
+                                    <label for="password" class="mr-3">Password</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+                                </div>
+                                <!-- COMPONENT START -->
+                                <div class="form-group mt-3">
+                                    <div class="custom-file">
+                                        <input type="file" accept="image/jpeg" class="custom-file-input" id="cover-image" onclick="what_method('embed')">
+                                        <label class="custom-file-label" for="cover" id="label-cover">Cover Image</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-file">
+                                        <input type="file" accept=".txt" class="custom-file-input" id="data-file">
+                                        <label class="custom-file-label" for="customFile" id="label-data">Secret Data File</label>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row-reverse">
+                                    <button class="btn btn-primary" id="btn-embed">Embed</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="extract" role="tabpanel" aria-labelledby="extract-tab">
+                                <div class="form-inline mt-3">
+                                    <label for="password" class="mr-3">Password</label>
+                                    <input type="text" class="form-control" id="password-ext" name="password-ext">
+                                </div>
+                                <!-- COMPONENT START -->
+                                <div class="form-group mt-3">
+                                    <div class="custom-file">
+                                        <input type="file" accept="image/jpeg" class="custom-file-input" id="stego-image" onclick="what_method('extract')">
+                                        <label class="custom-file-label" for="stego" id="label-stego">Stego Image</label>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row-reverse">
+                                    <button class="btn btn-primary" id="btn-extract">Extract</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="psnr" role="tabpanel" aria-labelledby="psnr-tab">
+                                    <!-- COMPONENT START -->
+                                    <div class="form-group mt-3">
+                                        <div class="custom-file">
+                                            <input type="file" accept="image/jpeg" class="custom-file-input" id="ori-image" onchange="oriImg()">
+                                            <label class="custom-file-label" for="ori" id="label-ori">Original Image</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-file">
+                                            <input type="file" accept="image/jpeg" class="custom-file-input" id="stegoimg-file" onchange="stegoImg()">
+                                            <label class="custom-file-label" for="customFile" id="label-stegoimg">Stego Image</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group d-flex flex-row-reverse">
+                                        <button class="btn btn-primary" id="btn-psnr" onclick="getPSNR()">Calculate</button>
+                                    </div>
+                                </div>
+                        </div>
+                        <pre id="outputdiv" class="card"></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/pooper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/f5stego.min.js"></script>
+    <script src="js/FileSaver.js"></script>
+    <script src="js/bigInteger.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
