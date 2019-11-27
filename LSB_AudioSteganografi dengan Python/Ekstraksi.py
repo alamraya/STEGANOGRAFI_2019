@@ -10,6 +10,6 @@ string = "".join(chr(int("".join(map(str,extracted[i:i+8])),2)) for i in range(0
 
 decoded = string.split("###")[0]
 
-# Menampilkan Pesan (Plaintext)
+# Menampilkan pesan (Plaintext)
 print("Berhasil Diekstraksi! Pesan:  "+decoded)
 song.close()
