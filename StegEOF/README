@@ -1,0 +1,3 @@
+--Implementasi Steganografi Dengan Menggunakan Algoritma End Of File--
+Aplikasi ini menggunakan java sebagai bahasa pemrogramannya. Aplikasi ini bekerja dengan cara menyisipkan suatu dokumen ke dalam media citra,
+dokumen tersebut diubah ke dalam bentuk biner kemudian disisipkan ke file citra yang akan menjadi cover, biner tersebut di simpan di ujung file.
