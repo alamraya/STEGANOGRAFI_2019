@@ -18,12 +18,11 @@ project ini terdapat 3 folder yaitu
 * Steganografi-Alpha
 * Steganografi-Beta
 
+```
 Steganalys berfungsi untuk analisis stego image
-
 Steganografi-Alpha adalah aplikasi iterasi pertama
-
 Steganografi-Beta adalah aplikasi iterasi kedua
-
+```
 
 ### Steganalys
 * run index.html in browser
