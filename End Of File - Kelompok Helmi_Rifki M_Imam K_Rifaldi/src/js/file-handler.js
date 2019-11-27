@@ -353,9 +353,9 @@ export default class FileHandler {
     if (this.hideFiles && this.hideImage && validateHidePassword()) {
       if (this.calculated) {
         // Confirm previous files will be overridden.
-        $('#confirmModal').modal()
-        $('#confirmModalTitle').html('Sembunyikan File didalam Gambar ')
-        $('#weHaveLiftOff').on('click', this.hide)
+        // $('#confirmModal').modal()
+        // $('#confirmModalTitle').html('Sembunyikan File didalam Gambar ')
+        // $('#weHaveLiftOff').on('click', this.hide)
         this.hide()
       } else {
         this.hide()
@@ -371,9 +371,9 @@ export default class FileHandler {
     if (this.revealImage) {
       if (this.calculated) {
         // Confirm previous files will be overridden.
-        $('#confirmModal').modal()
-        $('#confirmModalTitle').html('Kembalikan files dari gambar')
-        $('#weHaveLiftOff').on('click', this.reveal)
+        // $('#confirmModal').modal()
+        // $('#confirmModalTitle').html('Kembalikan files dari gambar')
+        // $('#weHaveLiftOff').on('click', this.reveal)
         this.reveal()
       } else {
         this.reveal()
