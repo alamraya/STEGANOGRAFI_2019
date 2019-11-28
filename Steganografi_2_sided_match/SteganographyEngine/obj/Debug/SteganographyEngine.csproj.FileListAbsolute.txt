@@ -1,0 +1,27 @@
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\SteganographyEngine.exe.config
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\SteganographyEngine.exe
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\SteganographyEngine.pdb
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\mscorlib.dll
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\normidna.nlp
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\normnfc.nlp
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\normnfd.nlp
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\normnfkc.nlp
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\bin\Debug\normnfkd.nlp
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.csprojResolveAssemblyReference.cache
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.Form1.resources
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.Properties.Resources.resources
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.csproj.GenerateResource.Cache
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.exe
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.pdb
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4 JALAN\Steganography-master\SteganographyEngine\bin\Debug\SteganographyEngine.exe.config
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4 JALAN\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.exe
+C:\Users\KN\Downloads\Compressed\Steganografi\Steganography-master_4 JALAN\Steganography-master\SteganographyEngine\obj\Debug\SteganographyEngine.pdb
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\bin\Debug\SteganographyEngine.exe.config
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\bin\Debug\SteganographyEngine.exe
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\bin\Debug\SteganographyEngine.pdb
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\obj\Debug\SteganographyEngine.csprojAssemblyReference.cache
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\obj\Debug\SteganographyEngine.Form1.resources
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\obj\Debug\SteganographyEngine.Properties.Resources.resources
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\obj\Debug\SteganographyEngine.csproj.GenerateResource.cache
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\obj\Debug\SteganographyEngine.exe
+C:\Users\Indra\Downloads\Steganography\SteganographyEngine\obj\Debug\SteganographyEngine.pdb
