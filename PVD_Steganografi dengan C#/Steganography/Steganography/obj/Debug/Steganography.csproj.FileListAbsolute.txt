@@ -1,0 +1,19 @@
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\obj\Debug\Steganography.Form1.resources
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\obj\Debug\Steganography.Properties.Resources.resources
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\obj\Debug\Steganography.csproj.GenerateResource.Cache
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\bin\Debug\Steganography.exe.config
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\bin\Debug\Steganography.exe
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\bin\Debug\Steganography.pdb
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\obj\Debug\Steganography.exe
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\obj\Debug\Steganography.pdb
+C:\Users\Tamem\documents\visual studio 2012\Projects\Steganography\Steganography\obj\Debug\Steganography.csprojResolveAssemblyReference.cache
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\bin\Debug\Steganography.exe.config
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\bin\Debug\Steganography.exe
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\bin\Debug\Steganography.pdb
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\obj\Debug\Steganography.csprojAssemblyReference.cache
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\obj\Debug\Steganography.Form1.resources
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\obj\Debug\Steganography.Properties.Resources.resources
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\obj\Debug\Steganography.csproj.GenerateResource.cache
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\obj\Debug\Steganography.csproj.CoreCompileInputs.cache
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\obj\Debug\Steganography.exe
+C:\Users\Dzul Fahmi\Documents\Color-Image-Steganography-Based-on-Pixel-Value-And-Key-LSB-master\C#\Steganography\Steganography\obj\Debug\Steganography.pdb
